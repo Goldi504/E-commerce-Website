@@ -8,8 +8,8 @@ import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import ShopContextProvider from "./contexts/ShopContext";
 import Cart from "./pages/Cart";
-//import Login from "./pages/Login";
-//import Order from "./pages/Order";
+import Login from "./pages/Login";
+import Orders from "./pages/Orders";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import SearchBar from "./components/searchBar";
@@ -28,6 +28,8 @@ const App = () => {
        
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+        <Route path="/orders" element={<Orders />} />
           <Route path="/collection" element={<Collection />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
